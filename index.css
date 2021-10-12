@@ -1,0 +1,29 @@
+body{
+	min-height: 100vh;
+	background: linear-gradient(to top ,#476930,#86b049);
+}
+h1{
+	color: #f3f6e4;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+header ul{
+	display: flex;
+}
+header ul li{
+	list-style: none;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #192919;
+	padding: 20px 30px;
+	margin-right: 50px;
+	border-radius: 20px;
+	background: rgb(	71, 105, 48, 0.2);
+}
+header ul li a:hover{
+	background: #f3f6e4;
+
+}		
