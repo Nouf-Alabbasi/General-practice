@@ -1,0 +1,150 @@
+			#red_riding{
+				left: 0;
+				position: absolute;
+				z-index: 10;
+			}
+
+			#branch{
+				z-index: 2;
+				position: absolute;
+				right: -100;
+				top: 400;
+				width: 60%;
+			}
+
+			#mainText{
+				z-index: 9;
+				color: FCFAF9;
+				font-size: 40pt;
+				right: 100;
+				position: absolute;
+				top: 200px;
+				font-family: 'Playfair Display', serif;
+			}
+
+			#backgroundtrees{
+				z-index: 1;
+				width: 100%;
+				opacity: 2%;
+			}
+
+			.firstPart{
+				width: 100%;
+				height: 900px;
+				overflow: hidden;
+				white-space: nowrap;
+				display: inline-block;
+			}
+
+			#secondGroupOftrees{
+				z-index: 0;
+				width: 100%;
+				position: relative;
+				right: 50px;
+			}
+
+
+			.trees{
+				background-image: 
+				linear-gradient(to bottom,#242424,transparent),
+				URL(darktrees.png);
+	
+				position: relative;
+				width: 100%;
+				height: 900px;
+			}
+			.secondPart{
+				position: relative;
+				width: 100%;
+				height: 900px;
+				background: #C2CFB2;
+				overflow: hidden;
+			}
+
+			#red2{
+				z-index: 2;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 20%;
+			}
+
+			.thirdPart{
+				position: relative;
+				width: 100%;
+				height: 300px;
+
+			}
+
+			#wolf{
+				z-index: 2;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 45%;
+				filter: brightness(50%);
+			}
+
+			.Darktrees{
+				background-image: 
+				linear-gradient(to bottom,#242424,transparent, #242424),
+				URL(backgroundtrees.png);
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+
+			.forthPart{
+				display: flex;
+				position: relative;
+				width: 100%;
+				height: 300px;
+			}
+			#house{
+				filter: brightness(30%);
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				z-index: 2;
+			}
+			#bush1{
+				filter: brightness(30%);
+				position: absolute;
+				right: 500;
+				bottom: -200;
+				z-index: 3;
+			}
+			#bush2{
+				filter: brightness(20%);
+				position: absolute;
+				right: 0;
+				right: 400;
+				bottom: -200;
+				z-index: 1;
+			}
+			#bush3{
+				filter: brightness(30%);
+				position: absolute;
+				right: 500;
+				bottom: -200;
+				z-index: 3;
+				width: 30%;
+			}
+
+			#end{
+				font-family: 'Playfair Display', serif;
+				z-index: 9;
+				color: FCFAF9;
+				font-size: 40pt;
+				text-align: center;
+				top: 50%;
+				position: relative;
+			}
+
+
+			body{
+				overflow-x: hidden;
+				padding: 0;
+				margin: 0;
+				background: #242424;
+			}
