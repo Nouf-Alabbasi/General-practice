@@ -7,16 +7,16 @@
 			#branch{
 				z-index: 2;
 				position: absolute;
-				right: -100;
-				top: 400;
+				top: 400px;
+				right: -100px;
 				width: 60%;
 			}
 
 			#mainText{
 				z-index: 9;
-				color: FCFAF9;
+				color: #FCFAF9;
 				font-size: 40pt;
-				right: 100;
+				left: 100px;
 				position: absolute;
 				top: 200px;
 				font-family: 'Playfair Display', serif;
@@ -134,7 +134,7 @@
 			#end{
 				font-family: 'Playfair Display', serif;
 				z-index: 9;
-				color: FCFAF9;
+				color: #FCFAF9;
 				font-size: 40pt;
 				text-align: center;
 				top: 50%;
@@ -148,3 +148,5 @@
 				margin: 0;
 				background: #242424;
 			}
+
+	

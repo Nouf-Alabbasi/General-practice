@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Audio</title>
+
+	<!-- the p5.js links -->
+<!-- 	<script src="../Audio/p5/p5.min.js"></script>
+	<script src="../Audio/p5/addons/p5.sound.js"></script>
+ -->
+	<!-- the jquery link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<style type="text/css">
+		footer{
+			position: fixed;
+			bottom: 0;
+		}
+
+		body{
+			padding: 0;
+			margin: 0;
+		}
+
+		#sea{
+			position: absolute;
+			background: #1ECDCB;
+			width: 10%;
+			max-width: 100%;
+			min-width: 10%;
+			height: 100vh;
+			right: 0;
+			z-index: 1;
+		}
+		#DarkSea{
+			position: absolute;
+			background: #188BD3;
+			width: 0%;
+			max-width: 100%;
+			min-width: 0%;
+			height: 100vh;
+			right: 0;
+			z-index: 2;
+		}
+		#sand{
+			position: absolute;
+			background: #f6e4ad;
+			width: 100%;
+			max-width: 100%;
+			height: 100vh;
+			z-index: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<p id="texts">54</p>
+	<div id="sand"></div>
+	<div id="sea"></div>
+	<div id="DarkSea"></div>
+
+	<footer>
+		<audio src="audio/Soundscape.mp3" controls="" class="audio" id="audio1"></audio>
+	</footer>
+
+	<script type="text/javascript">
+		var audio = document.getElementById('audio1');
+
+		$(document).ready(function(){
+			$("#sea").mouseenter(function(){
+				$("#audio1")[0].play();
+				// console.log(audio.currentTime)
+			});
+
+			$("#sea").mouseout(function(){
+				$("#audio1")[0].pause();
+				// console.log(audio.currentTime)
+			});
+			
+			function updatestamp() {
+			    timestamp = audio.currentTime;
+			    $("#texts").html(timestamp)
+			    // $("#sea").animate({width:timestamp*100}, "fast");
+			    $("#sea").css("width", timestamp*100);
+
+			    if (timestamp>5)
+			    {
+			    	$("#DarkSea").css("width", timestamp*20);
+	   			    $("#sea").css({"background": "red" }, 5000)
+
+			    }
+			}
+
+			$(function() {
+			    updatestamp();
+			    setInterval(updatestamp, 1);
+			});
+
+		});
+	</script>
+</body>
+</html>
+

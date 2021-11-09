@@ -1,6 +1,6 @@
 body{
 	min-height: 100vh;
-	background: linear-gradient(to top ,#476930,#86b049);
+	background: linear-gradient(to top ,#d8e0bb,#b6cec7);
 }
 h1{
 	color: #f3f6e4;
@@ -8,8 +8,14 @@ h1{
 	padding-bottom: 20px;
 }
 
+header{
+	position: relative;
+	top: 100px;
+}
+
 header ul{
 	display: flex;
+
 }
 header ul li{
 	list-style: none;
